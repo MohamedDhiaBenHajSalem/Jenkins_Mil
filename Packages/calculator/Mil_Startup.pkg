@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.2.1.151197+8d8dfdf66924" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">examplePackageVariable</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">MATLAB/Simulink01.ExecuteWorkspaceCmd</ID>
+			<XACCESS xsi:type="xaJob">
+				<TOOL-ID xsi:type="string">MATLAB/Simulink01</TOOL-ID>
+				<JOB-NAME xsi:type="string">ExecuteWorkspaceCmd</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="121" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Example Teststeps</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="4" id="df0635af-b1c4-4897-880a-4747a2104cfb" xsi:type="tsJob">
+				<MAPPING-REF xsi:type="string">MATLAB/Simulink01.ExecuteWorkspaceCmd</MAPPING-REF>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">Command</NAME>
+					<EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">addpath(&quot;C:\\Users\\dhiah\\ecu.test\\Matlab&quot;)</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+			</TESTSTEP>
+			<TESTSTEP format-rev="4" id="086792bb-c40d-4af5-86a6-837fa3cbfe13" xsi:type="tsJob">
+				<MAPPING-REF xsi:type="string">MATLAB/Simulink01.ExecuteWorkspaceCmd</MAPPING-REF>
+				<JOB-PARAMETER xsi:type="tsJobParameter">
+					<NAME xsi:type="string">Command</NAME>
+					<EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="string">sl_refresh_customizations;</VALUE>
+					</EXPRESSION>
+				</JOB-PARAMETER>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

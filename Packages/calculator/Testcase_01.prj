@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">8a577bef415711ef9d4bd4e98aa61fb1</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="7" xsi:type="configChange">
+			<NAME xsi:type="string">Start MATLAB environment</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">8a6aed77415711efb4abd4e98aa61fb1</ID>
+			<ACTION xsi:type="string">RESTART</ACTION>
+			<KEEP-TEST-CONFIG xsi:type="boolean">True</KEEP-TEST-CONFIG>
+			<LOAD-TEST-CONFIG xsi:type="string">calculator_config.tcf</LOAD-TEST-CONFIG>
+			<KEEP-TEST-BENCH-CONFIG xsi:type="boolean">True</KEEP-TEST-BENCH-CONFIG>
+			<LOAD-TEST-BENCH-CONFIG xsi:type="string">MATLAB_R2023b.tbc</LOAD-TEST-BENCH-CONFIG>
+			<TOOL-TREATMENTS/>
+		</COMPONENT>
+		<COMPONENT format-rev="11" xsi:type="subproject">
+			<NAME xsi:type="string">Insert your package references here</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">8a6cff97415711ef986fd4e98aa61fb1</ID>
+			<COMPONENTS/>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">Testcase_01_Req001</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">8a6e86b0415711efae49d4e98aa61fb1</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Testcase_01_Req001.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="7" xsi:type="configChange">
+			<NAME xsi:type="string">Change configuration</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">3622fd5841d211efad9bd4e98aa61fb1</ID>
+			<ACTION xsi:type="string">STOP</ACTION>
+			<KEEP-TEST-CONFIG xsi:type="boolean">False</KEEP-TEST-CONFIG>
+			<LOAD-TEST-CONFIG xsi:type="string">calculator_config.tcf</LOAD-TEST-CONFIG>
+			<KEEP-TEST-BENCH-CONFIG xsi:type="boolean">False</KEEP-TEST-BENCH-CONFIG>
+			<LOAD-TEST-BENCH-CONFIG xsi:type="string">MATLAB_R2023b.tbc</LOAD-TEST-BENCH-CONFIG>
+			<TOOL-TREATMENTS/>
+		</COMPONENT>
+	</COMPONENTS>
+	<MAPPING-FILES>
+		<ELEMENT xsi:type="localArtifactReference">
+			<PATH xsi:type="string">Parameters/calculator.xam</PATH>
+		</ELEMENT>
+	</MAPPING-FILES>
+</PROJECT>
